@@ -27,8 +27,42 @@ def about_us(request):
 def services(request):
     return render(request, 'services.html')
 
+
 def contact_us(request):
     return render(request,'contact-us.html')
 
+
 def gallery(request):
     return render(request,'gallery.html')
+
+
+def partner(request):
+    return render(request,'partner.html')
+
+
+def blast_freezer_and_chiller(request):
+    return render(request,'Blast_freezer_and_chiller.html')
+
+
+def evaporating_units(request):
+    return render(request,'Evaporating_Units.html')
+
+
+def hermetic_condensing_units(request):
+    return render(request,'Hermetic_Condensing_units.html')
+
+
+def modular_cold_rooms(request):
+    return render(request,'Modular_Cold_Rooms.html')
+
+
+def puff_panels(request):
+    return render(request,'Puff_Panels.html')
+
+
+def refrigeneration_products(request):
+    return render(request,'Refrigeration_Products.html')
+
+
+def roofing_panels(request):
+    return render(request,'Roofing_Panels.html')

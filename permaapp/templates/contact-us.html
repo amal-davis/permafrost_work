@@ -68,7 +68,7 @@
 	        		<div class="row">
 	        			<div class="col-md-3">
 			        		<div class="logo-brand">
-			        			<a href="index.html"><img src="images/logo.png" alt="industris"></a>
+			        			<a href="{% url 'index_page' %}"><img src="images/logo.png" alt="industris"></a>
 			        		</div>
 			        	</div>
 			        	<div class="col-md-9">
@@ -113,27 +113,32 @@
 			        						<li class="menu-item"><a href="contact-us.html">Contact Us</a></li>
 			        					</ul> -->
 			        				</li>
-			        				<li class="menu-item"><a href="{% url 'services' %}">Services</a>
+			        				<!-- <li class="menu-item"><a href="{% url 'services' %}">Services</a> -->
 			        					<!-- <ul class="sub-menu">
 			        						<li class="menu-item"><a href="services.html">Services</a></li>
 			        						<li class="menu-item"><a href="services-2.html">Services 2</a></li>
 			        						<li class="menu-item"><a href="services-detail.html">Services Detail</a></li>
 			        					</ul> -->
-			        				</li>
-			        				<li class="menu-item menu-item-has-children"><a href="project.html">Projects & Products</a>
+			        				<!-- </li> -->
+			        				<li class="menu-item menu-item-has-children"><a href="{% url 'services' %}">Product and Services</a>
 			        					<ul class="sub-menu">
-			        						<li class="menu-item"><a href="project.html">Project 1</a></li>
-			        						<li class="menu-item"><a href="project-2.html">Project 2</a></li>
-			        						<li class="menu-item"><a href="project-detail.html">Project Detail</a></li>
+											<li class="menu-item"><a href="{% url 'refrigeneration_products' %}">Refrigeration Products</a></li>
+			        						<li class="menu-item"><a href="{% url 'modular_cold_rooms' %}">Modular Cold Rooms</a></li>
+			        						<li class="menu-item"><a href="{% url 'evaporating_units' %}">Evaporating Units</a></li>
+			        						<li class="menu-item"><a href="{% url 'puff_panels' %}">Puff Panels</a></li>
+											<li class="menu-item"><a href="{% url 'blast_freezer_and_chiller' %}">Blast freezer and chiller</a></li>
+											<li class="menu-item"><a href="{% url 'roofing_panels' %}">Roofing Panels</a></li>
+											<li class="menu-item"><a href="{% url 'hermetic_condensing_units' %}">Hermetic Condensing units</a></li>
 			        					</ul>
 			        				</li>
-			        				<li class="menu-item"><a href="news.html">Gallery</a>
+			        				<li class="menu-item"><a href="{% url 'gallery' %}">Gallery</a>
 			        					<!-- <ul class="sub-menu">
 			        						<li class="menu-item current-menu-item page_item current_page_item"><a href="news.html">News 1</a></li>
 			        						<li class="menu-item"><a href="news-2.html">News 2</a></li>
 			        						<li class="menu-item"><a href="post.html">News Detail</a></li>
 			        					</ul> -->
 			        				</li>
+									<li class="menu-item"><a href="news.html">Partners</a>
 			        			</ul>
 		        				<a href="{% url 'contact_us' %}" class="btn btn-primary">Get a quote<i class="icon ion-md-paper-plane"></i></a>
 			        		</div>
@@ -199,27 +204,33 @@
 			        						<li class="menu-item"><a href="contact-us.html">Contact Us</a></li>
 			        					</ul> -->
 			        				</li>
-			        				<li class="menu-item menu-item-has-children"><a href="{% url 'services' %}">Services</a>
+			        				<!-- <li class="menu-item menu-item-has-children"><a href="">Services</a> -->
 			        					<!-- <ul class="sub-menu">
 			        						<li class="menu-item"><a href="services.html">Services</a></li>
 			        						<li class="menu-item"><a href="services-2.html">Services 2</a></li>
 			        						<li class="menu-item"><a href="services-detail.html">Services Detail</a></li>
 			        					</ul> -->
-			        				</li>
-			        				<li class="menu-item menu-item-has-children"><a href="project.html">Projects & Products</a>
+			        				<!-- </li> -->
+			        				<li class="menu-item menu-item-has-children"><a href="{% url 'services' %}">Product and Services</a>
 			        					<ul class="sub-menu">
-			        						<li class="menu-item"><a href="project.html">Project 1</a></li>
-			        						<li class="menu-item"><a href="project-2.html">Project 2</a></li>
-			        						<li class="menu-item"><a href="project-detail.html">Project Detail</a></li>
+											<li class="menu-item"><a href="{% url 'refrigeneration_products' %}">Refrigeration Products</a></li>
+			        						<li class="menu-item"><a href="{% url 'modular_cold_rooms' %}">Modular Cold Rooms</a></li>
+			        						<li class="menu-item"><a href="{% url 'evaporating_units' %}">Evaporating Units</a></li>
+			        						<li class="menu-item"><a href="{% url 'puff_panels' %}">Puff Panels</a></li>
+											<li class="menu-item"><a href="{% url 'blast_freezer_and_chiller' %}">Blast freezer and chiller</a></li>
+											<li class="menu-item"><a href="{% url 'roofing_panels' %}">Roofing Panels</a></li>
+											<li class="menu-item"><a href="{% url 'hermetic_condensing_units' %}">Hermetic Condensing units</a></li>
+											
 			        					</ul>
 			        				</li>
-			        				<li class="menu-item menu-item-has-children"><a href="news.html">Gallery</a>
+			        				<li class="menu-item menu-item-has-children"><a href="{% url 'gallery' %}">Gallery</a>
 			        					<!-- <ul class="sub-menu">
 			        						<li class="menu-item"><a href="news.html">News 1</a></li>
 			        						<li class="menu-item"><a href="news-2.html">News 2</a></li>
 			        						<li class="menu-item"><a href="post.html">News Detail</a></li>
 			        					</ul> -->
 			        				</li>
+									<li class="menu-item"><a href="news.html">Partners</a>
 			        			</ul>
 		        				<a href="{% url 'contact_us' %}" class="btn btn-primary">Get a quote<i class="icon ion-md-paper-plane"></i></a>
 			        		</div>
@@ -307,7 +318,7 @@
 		</div>
 	    
 
-		<footer id="site-footer" class="site-footer bg-footer">
+		<footer id="site-footer" class="site-footer">
 	        <div class="main-footer">
 	            <div class="container-custom">
 	                <div class="row">
@@ -331,12 +342,13 @@
 		                        <div id="custom_html-2" class="widget_text widget widget_custom_html padding-left">
 		                            <div class="textwidget custom-html-widget">
 		                                <ul>
-		                                    <li><a href="service-detail.html">Oil & Gas exploited</a></li>
-		                                    <li><a href="service-detail.html">Automotive Manufacturing</a></li>
-		                                    <li><a href="service-detail.html">Transportation & Distribution</a></li>
-		                                    <li><a href="service-detail.html">Manufacture</a></li>
-		                                    <li><a href="service-detail.html">Industrial Construction</a></li>
-		                                    <li><a href="service-detail.html">Green Energy</a></li>
+		                                    <li><a href="{% url 'refrigeneration_products' %}">Refrigeration Products</a></li>
+		                                    <li><a href="{% url 'modular_cold_rooms' %}">Modular Cold Rooms</a></li>
+		                                    <li><a href="{% url 'evaporating_units' %}">Evaporating Units</a></li>
+		                                    <li><a href="{% url 'puff_panels' %}">Puff Panels</a></li>
+		                                    <li><a href="{% url 'blast_freezer_and_chiller' %}">Blast freezer and chiller</a></li>
+		                                    <li><a href="{% url 'roofing_panels' %}">Roofing Panels</a></li>
+											<li><a href="{% url 'hermetic_condensing_units' %}">Hermetic Condensing units</a></li>
 		                                </ul>
 		                            </div>
 		                        </div>
@@ -349,11 +361,12 @@
 		                        <div id="custom_html-3" class="widget_text widge widget-footer widget_custom_html padding-left">
 		                            <div class="textwidget custom-html-widget">
 		                                <ul>
-		                                    <li><a href="index.html">About us</a></li>
-		                                    <li><a href="about.html">Contact us</a></li>
-		                                    <li><a href="services.html">The news</a></li>
-		                                    <li><a href="services.html">Terms & conditions</a></li>
-		                                    <li><a href="blog.html">Case Studies</a></li>
+		                                    <li><a href="{% url 'index_page' %}">Home</a></li>
+		                                    <li><a href="{% url 'about_us' %}">About US</a></li>
+		                                    <li><a href="{% url 'services' %}">Products and Service</a></li>
+		                                    <li><a href="{% url 'gallery' %}">Gallery</a></li>
+		                                    <li><a href="{% url 'partner' %}">Partner</a></li>
+											<li><a href="{% url 'contact_us' %}">Contact US</a></li>
 		                                </ul>
 		                            </div>
 		                        </div>
